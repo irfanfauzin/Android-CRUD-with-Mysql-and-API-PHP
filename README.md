@@ -6,6 +6,7 @@ An Application with functions : Register, Login, Update Password, and Delete acc
 
 1. Create new database
 2. Create table users 
+3. Create 3 column : user_id,username,password
 
 ## Set up Database Connection with API
 
