@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Profile"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="20dp"
+    android:layout_marginLeft="40dp"
+    android:layout_marginRight="40dp">
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@drawable/logo"
+        android:layout_marginBottom="10dp" />
+    <TextView
+        android:textSize="18dp"
+        android:fontFamily="@font/bold"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Profile"
+        android:layout_marginBottom="40dp"/>
+
+    <EditText
+        android:id="@+id/editTextUsername"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_rounded"
+        android:drawableLeft="@drawable/username"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/regular"
+        android:hint="Username"
+        android:inputType="text"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:textColor="#787878"
+        android:textColorHint="#B4B4B4"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"/>
+
+    <EditText
+        android:id="@+id/editTextCurrentPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_rounded"
+        android:drawableLeft="@drawable/change_password"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/regular"
+        android:hint="Current Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:textColor="#000"
+        android:textColorHint="#B4B4B4"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"/>
+    <EditText
+        android:id="@+id/editTextNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_rounded"
+        android:drawableLeft="@drawable/change_password"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/regular"
+        android:hint="New Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:textColor="#000"
+        android:textColorHint="#B4B4B4"
+        android:textSize="16dp"
+        android:layout_marginBottom="20dp"/>
+
+
+    <EditText
+        android:id="@+id/editTextConfirmNewPassword"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@drawable/input_rounded"
+        android:drawableLeft="@drawable/password"
+        android:drawablePadding="15dp"
+        android:fontFamily="@font/regular"
+        android:hint="Confirm Password"
+        android:inputType="textPassword"
+        android:paddingLeft="15dp"
+        android:paddingRight="20dp"
+        android:textColor="#000"
+        android:textColorHint="#B4B4B4"
+        android:textSize="16dp"
+        android:layout_marginBottom="10dp"/>
+
+
+
+    <Button
+        android:id="@+id/buttonChangePassword"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:textColor="#ffff"
+        android:text="Change Password"
+        android:background="@drawable/button"
+        android:fontFamily="@font/bold"/>
+
+
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="left">
+        <TextView
+            android:layout_alignParentLeft="true"
+            android:id="@+id/textDelete"
+            android:textColor="#FF0000"
+            android:fontFamily="@font/medium"
+            android:layout_gravity="left"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Delete my account "/>
+        <TextView
+            android:layout_alignParentRight="true"
+            android:id="@+id/textLogout"
+            android:textStyle="bold"
+            android:fontFamily="@font/medium"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Logout"/>
+    </RelativeLayout>
+
+    <ProgressBar
+        android:visibility="gone"
+        android:id="@+id/progressBar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true" />
+
+
+</LinearLayout>
